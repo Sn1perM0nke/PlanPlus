@@ -1,0 +1,123 @@
+Body{ 
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #555555;
+  background-image: url("img/idk.png");
+  background-size: cover;
+}
+
+
+
+.header{
+    height: 60px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+
+.left-section{
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.logo{
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+.name{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white; 
+}
+
+.middle-section{
+    display: flex;
+    flex: 1; /* search box resizes and other parts dont */
+
+}
+
+
+.right-section {
+position: relative;
+margin-left: 30px;
+text-align: right;
+margin-right: 0px;
+font-size: 15px;
+display: flex;
+transition: font-weight 0.2s; 
+
+}
+
+.border {
+position: absolute;
+left: -20px; 
+top: 50%;
+transform: translateY(-50%);
+height: 40%; 
+width: 4px;
+background-color: white;
+}
+
+i.bx-home {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 8px;
+    margin-top: 6px;
+    color: white;
+}
+i.bx-help-circle {
+font-size: 25px;
+margin-right: 10px;
+margin-left: 8px;
+margin-top: 8px;
+color: white;
+}
+i.bx-user-plus {
+font-size: 28px;
+margin-right: 10px;
+margin-left: 8px;
+margin-top: 8px;
+color: white;
+}
+i.bx-user {
+    font-size: 28px;
+    margin-right: 10px;
+    margin-left: 8px;
+    margin-top: 8px;
+    color: white;
+    }
+i.bx-calendar-plus{
+    font-size: 28px;
+    margin-right: 10px;
+    margin-left: 8px;
+    margin-top: 8px;
+    color: white; 
+}
+
+.home{
+margin-top: 10px;
+color: white;
+transition: all 0.5s;
+}
+
+.home:hover{
+    color: rgb(221, 147, 255);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+

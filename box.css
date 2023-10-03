@@ -1,0 +1,51 @@
+.info-boxes {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 200px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    background-color: #232323;
+    
+}
+
+.info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 18px;
+}
+
+/* Add space between boxes */
+.info-box:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* Add hover effect */
+.info-box:hover {
+    transform: translateY(-10px) translateX(5px);
+
+}
+
+
+
+
+.box-head{
+    color: white;
+}
+
+.box-p{
+    color: white;
+}

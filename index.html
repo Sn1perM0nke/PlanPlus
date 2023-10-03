@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fa">
+    <head>
+        <title>PlanPlus</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="box.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="login.js">
+        <link rel="stylesheet" href="database.js">
+
+        <link rel="website icon" type="png" href="img/logo empty2.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        
+
+
+    </head>
+    <body>
+        <div class="header">
+          <div class="left-section">
+            <img class="logo" src="img/logo empty.png">
+            <p class="name">PlanPlus </p>
+            
+          </div>
+
+          <div class="middle-section" >
+             
+          </div>
+
+          <div class="right-section">
+            <p class="home">username</p>
+            <i class='bx bx-user' ></i>
+          </div>
+
+          <div class="right-section">
+            <p class="home">ساخت نمودار جدید </p>
+            <i class='bx bx-calendar-plus'></i>
+            <div class="border"></div>
+          </div>
+
+          <div class="right-section">
+            <p class="home login" onclick="toggleSignBox()">عضویت</p>
+            <i class='bx bx-user-plus'></i>
+            <div class="border"></div>
+          </div>
+
+          <div class="right-section">
+            <p class="home">درباره ما </p>
+            <i class='bx bx-help-circle'></i>
+            <div class="border"></div>
+            
+          </div>          
+
+          <div class="right-section">
+            <p class="home">صفحه اصلی </p>
+            <i class='bx bx-home'></i>
+            <div class="border"></div>
+            
+          </div>
+
+          
+          
+        </div>  
+ 
+        <div class="info-boxes">
+          <div class="info-box">
+              <h2 class="box-head">Box 1</h2>
+              <p class="box-p">This is information for box 1.</p>
+          </div>
+
+          <div class="info-box">
+              <h2 class="box-head">Box 2</h2>
+              <p class="box-p">This is information for box 2.</p>
+          </div>
+
+          <div class="info-box">
+              <h2 class="box-head">Box 3</h2>
+              <p class="box-p">This is information for box 3.</p>
+          </div>
+      </div>
+
+      <div class="overlay1" id="overlay"></div>
+
+      <div class="signup-box" id="Signupbox">
+        <div class="close-button" onclick="closeBox(this)">×</div>
+        <h2>ثبت نام</h2>
+        <form id="signup-form">
+          <div class="form-group">
+              <div class="field-label">
+                  <label for="first-name">:نام</label>
+              </div>
+              <input type="text" id="first-name" name="first-name" class="field-input">
+              <div class="field-label">
+                  <label for="last-name">:نام خانوادگی</label>
+              </div>
+              <input type="text" id="last-name" name="last-name" class="field-input">
+          </div>
+          <div class="form-group">
+              <div class="field-label">
+                  <label for="age">سال تولد</label>
+              </div>
+              <input type="date" id="age" name="age" class="field-input age-input">
+          </div>
+          <div class="form-group">
+              <div class="field-label">
+                  <label for="username">:نام کاربری</label>
+              </div>
+              <input type="text" id="username" name="username" class="field-input">
+          </div>
+          <div class="form-group">
+              <div class="field-label">
+                  <label for="password">:گذرواژه</label>
+              </div>
+              <input type="password" id="password" name="password" class="field-input">
+          </div>
+          
+          <button type="submit">ثبت نام</button>
+          <div class="login-option">
+              <p class="log">آیا قبلا ثبت نام کردین؟</p>
+              <div class="login-text" onclick="toggleLoginBox()" >ورود</div>
+          </div>
+      </form>
+    </div>
+
+
+
+    <script src="login.js"></script>
+
+
+    <div class="login-box" id="Loginbox">
+        <div class="close-button" onclick="closeBox(this)">×</div>
+        <h2>ورود</h2>
+        <form>
+          <div class="form-group">
+              <div class="field-label">
+                  <label for="username2">:نام کاربری</label>
+              </div>
+              <input type="text" id="username2" name="username" class="field-input">
+          </div>
+          <div class="form-group">
+              <div class="field-label">
+                  <label for="password2">:گذرواژه</label>
+              </div>
+              <input type="password" id="password2" name="password" class="field-input">
+          </div>
+          <div class="login">
+              <button class="login-btn2" >ورود</button>
+          </div>
+      </form>
+    </div>
+
+
+    </body>
+
+
+
+</html>
