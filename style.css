@@ -1,10 +1,13 @@
-Body{ 
-  margin: 0;
-  font-family: 'Rubik', sans-serif;
-  background-color: #555555;
-  background-image: url("img/idk.png");
-  background-size: cover;
-}
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #555555;
+    background-image: url("img/idk.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center center; /* Centers the background image */
+  }
 
 
 
@@ -76,6 +79,7 @@ i.bx-home {
     margin-left: 8px;
     margin-top: 6px;
     color: white;
+    transition: all 0.5s;
 }
 i.bx-help-circle {
 font-size: 25px;
@@ -83,6 +87,7 @@ margin-right: 10px;
 margin-left: 8px;
 margin-top: 8px;
 color: white;
+transition: all 0.5s;
 }
 i.bx-user-plus {
 font-size: 28px;
@@ -90,6 +95,7 @@ margin-right: 10px;
 margin-left: 8px;
 margin-top: 8px;
 color: white;
+transition: all 0.5s;
 }
 i.bx-user {
     font-size: 28px;
@@ -97,6 +103,7 @@ i.bx-user {
     margin-left: 8px;
     margin-top: 8px;
     color: white;
+    transition: all 0.5s;
     }
 i.bx-calendar-plus{
     font-size: 28px;
@@ -104,6 +111,7 @@ i.bx-calendar-plus{
     margin-left: 8px;
     margin-top: 8px;
     color: white; 
+    transition: all 0.5s;
 }
 
 .home{
@@ -112,12 +120,31 @@ color: white;
 transition: all 0.5s;
 }
 
-.home:hover{
+.home:hover {
     color: rgb(221, 147, 255);
     cursor: pointer;
     font-weight: bold;
 }
 
+.home:hover + i.bx-home {
+    color: rgb(221, 147, 255);
+}
+
+.home:hover + i.bx-help-circle {
+    color: rgb(221, 147, 255);
+}
+
+.home:hover + i.bx-user-plus {
+    color: rgb(221, 147, 255);
+}
+
+.home:hover + i.bx-user {
+    color: rgb(221, 147, 255);
+}
+
+.home:hover + i.bx-calendar-plus {
+    color: rgb(221, 147, 255);
+}
 
 
 

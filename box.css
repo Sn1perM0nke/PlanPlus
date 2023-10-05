@@ -3,6 +3,7 @@
     margin-top: 100px;
     justify-content: center;
     padding: 20px;
+    position: fixed;
 }
 
 .info-box {
