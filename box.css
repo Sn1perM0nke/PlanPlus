@@ -50,3 +50,11 @@
 .box-p{
     color: white;
 }
+
+/* Adjust for smaller screens (e.g., phones) */
+@media (max-width: 767px) {
+    .info-box {
+        flex: 1 0 100%; /* Make the box take full width on smaller screens */
+        margin: 10px 0; /* Add margin to separate the stacked boxes */
+    }
+}
