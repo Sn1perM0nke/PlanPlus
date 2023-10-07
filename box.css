@@ -80,6 +80,48 @@ i.bx-time-five{
     font-size: 60px;
 }
 
+.info-box {
+    position: relative; /* Set relative positioning for the container */
+}
+
+.info-icon {
+    position: absolute; /* Set absolute positioning */
+    bottom: 5px; /* Adjust the distance from the bottom */
+    right: 5px; /* Adjust the distance from the right */
+}
+
+.info-icon i {
+    font-size: 30px; /* Adjust the icon's font size */
+}
+
+.info-icon:hover {
+    cursor: pointer;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
+
 .time-btn{
     font-family: 'Rubik', sans-serif;
     font-size: 15px;

@@ -142,13 +142,18 @@
     padding: 10px;
     box-sizing: border-box;
     text-align: right;
-    border: 1px solid #9b59b6;
+    border: 3px solid #9b59b6;
     border-radius: 5px;
+    background-color: #5b5b5b;
+    color: white;
+    font-family: 'Rubik', sans-serif ;
+    font-size: 15px;
 }
 
 
 /* CSS */
 .login-btn {
+    font-family: 'Rubik', sans-serif;
     padding: 0.6em 2em;
     border: none;
     outline: none;

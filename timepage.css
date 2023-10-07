@@ -1,0 +1,28 @@
+.boxes {
+    display: flex;
+
+    justify-content: right;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+}
+
+.information {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 15px;
+    margin: 10px;
+    width: 450px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgb(26, 29, 30);
+}
+
+.text{
+    font-size: 18px;
+    color: white;
+}
