@@ -53,7 +53,7 @@
 }
 
 .box-head2 , .box-p2 ,i.bx-time-five {
-    background: linear-gradient(45deg,#005eff,#004cff,#1f00e6, #bb00ff, #1f00e6, #004cff, #005eff);
+    background: linear-gradient(45deg,#005eff,#004cff,rgb(197, 71, 255), #f700ff, rgb(197, 71, 255), #004cff, #005eff);
     background-size: 400% 100%; /* Adjusted background size for a full loop */
     -webkit-animation: GradientAnimation 10s linear infinite;
     -moz-animation: GradientAnimation 10s linear infinite;
