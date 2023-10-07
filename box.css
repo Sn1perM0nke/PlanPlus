@@ -66,19 +66,14 @@
 
 @keyframes GradientAnimation {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 100%;
     }
     100% {
-        background-position: 400% 50%; /* Adjusted for a full loop */
+        background-position: 400% 100%; /* Adjusted for a full loop */
     }
 }
 /* Adjust for smaller screens (e.g., phones) */
-@media (max-width: 767px) {
-    .info-box {
-        flex: 1 0 100%; /* Make the box take full width on smaller screens */
-        margin: 10px 0; /* Add margin to separate the stacked boxes */
-    }
-}
+
 
 
 i.bx-time-five{
@@ -107,4 +102,18 @@ i.bx-time-five{
     color: rgb(255, 255, 255);
     cursor: pointer;
 
+}
+
+@media (max-width: 767px) {
+    .info-box {
+        flex: 1 0 100%; /* Make the box take full width on smaller screens */
+        margin: 10px 0; /* Add margin to separate the stacked boxes */
+
+    }
+}
+@media (max-width: 767px) {
+    .info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
 }
