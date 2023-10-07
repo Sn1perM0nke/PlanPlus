@@ -3,19 +3,20 @@
     margin-top: 100px;
     justify-content: center;
     padding: 20px;
-    position: relative
+    position: relative;
+    
 }
 
 .info-box {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 20px;
     margin: 10px;
-    max-width: 200px;
-    height: 300px;
+    max-width: 250px;
+    height: 350px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     background-color: rgb(26, 29, 30);
     
 }
@@ -36,7 +37,7 @@
 
 /* Add hover effect */
 .info-box:hover {
-    transform: translateY(-10px) translateX(5px);
+    transform: translateY(-10px) translateX(5px) rotate(0.5deg);
 
 }
 
@@ -51,10 +52,59 @@
     color: white;
 }
 
+.box-head2 , .box-p2 ,i.bx-time-five {
+    background: linear-gradient(45deg,#00ffaa,#00c7ff,#e6005c, #ff7300, #e6005c, #00c7ff, #00ffaa);
+    background-size: 400% 100%; /* Adjusted background size for a full loop */
+    -webkit-animation: GradientAnimation 10s linear infinite;
+    -moz-animation: GradientAnimation 10s linear infinite;
+    animation: GradientAnimation 10s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 400% 50%; /* Adjusted for a full loop */
+    }
+}
 /* Adjust for smaller screens (e.g., phones) */
 @media (max-width: 767px) {
     .info-box {
         flex: 1 0 100%; /* Make the box take full width on smaller screens */
         margin: 10px 0; /* Add margin to separate the stacked boxes */
     }
+}
+
+
+i.bx-time-five{
+    font-size: 60px;
+}
+
+.time-btn{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    border: 2px solid rgb(197, 71, 255);
+    border-radius: 30px;
+    background-color: rgb(26, 29, 30);
+    color: rgb(197, 71, 255);
+    width: 150px;
+    height: 50px;
+    transition: all 0.5s;
+}
+
+.time-btn:hover{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    border: 2px solid rgb(197, 71, 255);
+    background-color: rgb(197, 71, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
 }

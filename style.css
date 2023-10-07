@@ -5,9 +5,12 @@ body {
     background-image: url("img/idk.png");
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-position: center center; /* Centers the background image */
-  }
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Add a pseudo-element for the angled box */
+
 
 
 
