@@ -273,3 +273,44 @@
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
+
+
+.success-box {
+    display: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 20px; /* Adjust this value based on your design */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.success-box.active {
+    display: block;
+    opacity: 1;
+}
+
+.error-box {
+    display: none;
+    background-color: rgb(211, 0, 0);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.error-box.active {
+    display: block;
+    opacity: 1;
+}

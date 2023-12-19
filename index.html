@@ -10,21 +10,28 @@
         <link rel="stylesheet" href="login.css">
         <link rel="stylesheet" href="login.js">
         <link rel="stylesheet" href="database.js">
+        <meta charset="UTF-8">
 
-        <link rel="website icon" type="png" href="img/logo empty2.png">
+        <link rel="website icon" type="png" href="kharazmi/img/logo empty2.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" >
 
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         
 
 
     </head>
     <body>
-        
+
+
+
+
+    <div class="back">
         <div class="header">
           <div class="left-section">
             <img class="logo" src="img/logo empty.png">
@@ -36,17 +43,14 @@
              
           </div>
 
-          <div class="right-section">
-            <p class="home">username</p>
-            <i class='bx bx-user' ></i>
-          </div>
+
+
 
 
           <div class="right-section">
-            <p class="home login" onclick="toggleSignBox()">عضویت</p>
+            <p class="home login" id="signupButton">عضویت</p>
             <i class='bx bx-user-plus'></i>
-            <div class="border"></div>
-          </div>
+        </div>
 
           <div class="right-section">
             <p class="home">درباره ما </p>
@@ -54,14 +58,16 @@
             <div class="border"></div>
             
           </div>          
-
-          <div class="right-section">
+          <a href="https://plan-plus.ir" style="  text-decoration: none; color: inherit;">
+            <div class="right-section">
+            
             <p class="home">صفحه اصلی </p>
             <i class='bx bx-home'></i>
             <div class="border"></div>
             
-          </div>
-
+            </div>
+        </a>
+    
           
           
           
@@ -75,7 +81,16 @@
 
           <div class="info-box">
             <i class='bx bx-time-five'></i>
-              <h2 class="box-head">زمانبندی</h2>
+
+            <a href="timeinfo.html" style="  text-decoration: none; color: inherit;">
+
+            <div class="info-icon" title="برای توضیحات بیشتر کلیک کنید">
+                <i class='bx bx-info-circle box-head2'></i>
+            </div>
+            
+            </a>
+
+            <h2 class="box-head">زمانبندی</h2>
               <p class="box-p">نمودار زمان بندی برای پیدا کردن زمان مناسب فعالیت های گروهی میباشد</p>
               <p class="box-p">برای درست کردن نمودار زمانبندی کلیک کنید</p>
               <button class="time-btn">ساخت نمودار</button>
@@ -86,76 +101,12 @@
               <p class="box-p box-p2">این قابلیت به زودی در دسترس قرار میگیرد</p>
           </div>
       </div>
-
+    </div>
       <div class="overlay1" id="overlay"></div>
 
-      <div class="signup-box" id="Signupbox">
-        <div class="close-button" onclick="closeBox(this)">×</div>
-        <h2>ثبت نام</h2>
-        <form id="signup-form">
-          <div class="form-group">
-              <div class="field-label">
-                  <label for="first-name">:نام</label>
-              </div>
-              <input type="text" id="first-name" name="first-name" class="field-input">
-              <div class="field-label">
-                  <label for="last-name">:نام خانوادگی</label>
-              </div>
-              <input type="text" id="last-name" name="last-name" class="field-input">
-          </div>
-          <div class="form-group">
-              <div class="field-label">
-                  <label for="age">سال تولد</label>
-              </div>
-              <input type="date" id="age" name="age" class="field-input age-input">
-          </div>
-          <div class="form-group">
-              <div class="field-label">
-                  <label for="username">:نام کاربری</label>
-              </div>
-              <input type="text" id="username" name="username" class="field-input">
-          </div>
-          <div class="form-group">
-              <div class="field-label">
-                  <label for="password">:گذرواژه</label>
-              </div>
-              <input type="password" id="password" name="password" class="field-input">
-          </div>
-          
-          <button class="login-btn" type="submit">ثبت نام</button>
-          <div class="login-option">
-              <p class="log">آیا قبلا ثبت نام کردین؟</p>
-              <div class="login-text" onclick="toggleLoginBox()" >ورود</div>
-          </div>
-      </form>
-    </div>
 
 
 
-    <script src="login.js"></script>
-
-
-    <div class="login-box" id="Loginbox">
-        <div class="close-button" onclick="closeBox(this)">×</div>
-        <h2>ورود</h2>
-        <form>
-          <div class="form-group">
-              <div class="field-label">
-                  <label for="username2">:نام کاربری</label>
-              </div>
-              <input type="text" id="username2" name="username" class="field-input">
-          </div>
-          <div class="form-group">
-              <div class="field-label">
-                  <label for="password2">:گذرواژه</label>
-              </div>
-              <input type="password" id="password2" name="password" class="field-input">
-          </div>
-          <div class="login">
-              <button class="login-btn2 login-btn " >ورود</button>
-          </div>
-      </form>
-    </div>
 
 
     </body>

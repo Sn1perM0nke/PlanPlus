@@ -11,9 +11,10 @@
     background-color: #fff;
     border-radius: 30px;
     padding: 20px;
-    margin: 10px;
-    max-width: 250px;
-    height: 350px;
+    margin: 30px;
+    margin-top: 20px;
+    max-width: 17em;
+    height: 21em;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease-in-out;
@@ -31,13 +32,11 @@
 }
 
 /* Add space between boxes */
-.info-box:not(:last-child) {
-    margin-right: 50px;
-}
+
 
 /* Add hover effect */
 .info-box:hover {
-    transform: translateY(-10px) translateX(5px) rotate(0.5deg);
+    transform: translateY(-10px) translateX(5px);
 
 }
 
@@ -52,7 +51,7 @@
     color: white;
 }
 
-.box-head2 , .box-p2 ,i.bx-time-five {
+.box-head2 , .box-p2 ,.bx-time-five {
     background: linear-gradient(45deg,#005eff,#004cff,rgb(197, 71, 255), #f700ff, rgb(197, 71, 255), #004cff, #005eff);
     background-size: 400% 100%; /* Adjusted background size for a full loop */
     -webkit-animation: GradientAnimation 10s linear infinite;
@@ -76,7 +75,7 @@
 
 
 
-i.bx-time-five{
+.bx-time-five{
     font-size: 60px;
 }
 
@@ -147,17 +146,22 @@ i.bx-time-five{
 }
 
 @media (max-width: 767px) {
-    .info-box {
-        flex: 1 0 100%; /* Make the box take full width on smaller screens */
-        margin: 10px 0;
-        flex-direction: column;
-        align-items: center; /* Add margin to separate the stacked boxes */
+  .info-box {
+    flex: 1 0 100%; /* Make the box take full width on smaller screens */
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center; /* Add margin to separate the stacked boxes */ 
+    margin-right: 0px;
+  }
 
-    }
-}
-@media (max-width: 767px) {
-    .info-boxes {
-        flex-direction: column;
-        align-items: center;
-    }
+  .info-box p {
+    margin: 10px; /* Add margin between paragraphs on mobile */
+  }
+
+  .info-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjust padding for the entire container */
+  }
 }

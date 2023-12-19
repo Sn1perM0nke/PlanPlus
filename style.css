@@ -1,3 +1,4 @@
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
@@ -6,7 +7,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
+
 }
 
 /* Add a pseudo-element for the angled box */
@@ -76,7 +77,7 @@ width: 4px;
 background-color: white;
 }
 
-i.bx-home {
+.bx-home {
     font-size: 25px;
     margin-right: 10px;
     margin-left: 8px;
@@ -84,7 +85,7 @@ i.bx-home {
     color: white;
     transition: all 0.5s;
 }
-i.bx-help-circle {
+.bx-help-circle {
 font-size: 25px;
 margin-right: 10px;
 margin-left: 8px;
@@ -92,7 +93,7 @@ margin-top: 8px;
 color: white;
 transition: all 0.5s;
 }
-i.bx-user-plus {
+.bx-user-plus {
 font-size: 28px;
 margin-right: 10px;
 margin-left: 8px;
@@ -100,7 +101,7 @@ margin-top: 8px;
 color: white;
 transition: all 0.5s;
 }
-i.bx-user {
+.bx-user {
     font-size: 28px;
     margin-right: 10px;
     margin-left: 8px;
@@ -108,7 +109,7 @@ i.bx-user {
     color: white;
     transition: all 0.5s;
     }
-i.bx-calendar-plus{
+.bx-calendar-plus{
     font-size: 28px;
     margin-right: 10px;
     margin-left: 8px;
@@ -119,14 +120,16 @@ i.bx-calendar-plus{
 
 .home{
 margin-top: 10px;
+
 color: white;
-transition: all 0.5s;
+transition: all 0.3s;
 }
 
 .home:hover {
     color: rgb(221, 147, 255);
     cursor: pointer;
-    font-weight: bold;
+    font-size: 17px;
+
 }
 
 .home:hover + i.bx-home {
